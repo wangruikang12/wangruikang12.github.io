@@ -1,0 +1,1157 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+
+    <title>array | </title>
+    <meta name="author" content="John Doe">
+    
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    
+    <meta property="og:site_name" content="Hexo"/>
+
+    
+    <meta property="og:image" content=""/>
+    
+
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/lib/materialize.min.css">
+    <link rel="stylesheet" href="/css/lib/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+
+    
+        <link rel="stylesheet" href="/css/lib/prettify-tomorrow-night-eighties.css" type="text/css">
+    
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+    <img src="/weixin_favicon.png" style="position: absolute; left: -9999px; opacity: 0; filter: alpha(opacity=0);">
+
+    <nav class="indigo">
+    <div class="nav-wrapper">
+        <a href="#" data-activates="main-menu" class="button-collapse">
+            <i class="fa fa-navicon"></i>
+        </a>
+        <div class="">
+            <a href="/" class="brand-logo hide-on-med-and-down">Hexo</a>
+            <ul class="right hide-on-med-and-down">
+                
+                    <li>
+                        <a class="menu-home " href="/" >
+                            <i class="fa fa-home "></i>
+                            
+                            Home
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-archive " href="/archives" >
+                            <i class="fa fa-archive "></i>
+                            
+                            Archives
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                            <i class="fa fa-bookmark "></i>
+                            
+                            Categories
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-reading " href="/reading" >
+                            <i class="fa fa-book "></i>
+                            
+                            Reading
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-about " href="/about" >
+                            <i class="fa fa-user "></i>
+                            
+                            About
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-search modal-trigger " href="#search" >
+                            <i class="fa fa-search "></i>
+                            
+                            Search
+                        </a>
+                    </li>
+                
+            </ul>
+            <div>
+    <ul class="side-nav indigo darken-1" id="main-menu">
+        
+        <li class="side-user">
+            <div class="row">
+                <div class="col s4 no-padding">
+                    <img class="avatar-image circle responsive-img" src="http://ww2.sinaimg.cn/small/74990035jw1f1rjkd681bj20rs0rsdhg.jpg" alt="User Avatar">
+                </div>
+                <div class="info col s8 valign-wrapper no-padding">
+                    <div class="valign">
+                        <p class="name">你的大名</p>
+                        <p class="desc">Web前端/iOS/技术宅</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        
+
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-home " href="/" >
+                    <i class="fa fa-home "></i>
+                    
+                    Home
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-archive " href="/archives" >
+                    <i class="fa fa-archive "></i>
+                    
+                    Archives
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                    <i class="fa fa-bookmark "></i>
+                    
+                    Categories
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-reading " href="/reading" >
+                    <i class="fa fa-book "></i>
+                    
+                    Reading
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-about " href="/about" >
+                    <i class="fa fa-user "></i>
+                    
+                    About
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-search modal-trigger " href="#search" >
+                    <i class="fa fa-search "></i>
+                    
+                    Search
+                </a>
+            </li>
+        
+    </ul>
+
+    <ul class="side-nav indigo darken-1" id="category-menu">
+    
+
+            
+
+    </ul>
+</div>
+
+        </div>
+    </div>
+</nav>
+
+<div id="search" class="modal search-modal">
+    <div class="row">
+        <div class="input-field col s12">
+              <input id="search-input" type="text">
+              <label for="search-input">Search</label>
+        </div>
+
+    </div>
+    <div id="search-result" class="search-result col s12">
+
+    </div>
+</div>
+
+
+    <main>
+        <div class="container main-container">
+    
+
+<nav class="page-nav hide-on-small-only">
+    <div class="nav-wrapper indigo">
+        <span class="breadcrumb">Current page(Tags)</span>
+        
+
+        
+            <a class="breadcrumb" href="/tags/array/">array</a>
+        
+    </div>
+</nav>
+
+
+
+    <div class="collection mt-0">
+        
+            <a href="/2023/04/21/zip/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.242Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Group array elements
+            </a>
+        
+            <a href="/2023/04/21/zipWith/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.242Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Group array elements based on function
+            </a>
+        
+            <a href="/2023/04/21/without/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.240Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Filter out matching array elements
+            </a>
+        
+            <a href="/2023/04/21/uniqueElementsByRight/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.237Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Reversed unique values in array based on function
+            </a>
+        
+            <a href="/2023/04/21/unzip/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.237Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Ungroup array elements
+            </a>
+        
+            <a href="/2023/04/21/unzipWith/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.237Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Ungroup array elements based on function
+            </a>
+        
+            <a href="/2023/04/21/union/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.236Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Array union
+            </a>
+        
+            <a href="/2023/04/21/unionWith/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.236Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Array union based on function
+            </a>
+        
+            <a href="/2023/04/21/unionBy/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.236Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Mapped array union
+            </a>
+        
+            <a href="/2023/04/21/uniqueElements/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.236Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Unique values in array
+            </a>
+        
+            <a href="/2023/04/21/uniqueElementsBy/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.236Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Unique values in array based on function
+            </a>
+        
+            <a href="/2023/04/21/toggleElement/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.233Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Toggle element in array
+            </a>
+        
+            <a href="/2023/04/21/transpose/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.233Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Transpose matrix
+            </a>
+        
+            <a href="/2023/04/21/toHash/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.229Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Iterable to hash
+            </a>
+        
+            <a href="/2023/04/21/toIdentityObject/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.229Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Convert array to identity object
+            </a>
+        
+            <a href="/2023/04/21/takeWhile/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.226Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Remove list elements while condition is met
+            </a>
+        
+            <a href="/2023/04/21/takeRight/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.225Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Remove list elements from the end
+            </a>
+        
+            <a href="/2023/04/21/takeRightUntil/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.225Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Remove list elements from the end until condition is met
+            </a>
+        
+            <a href="/2023/04/21/takeUntil/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.225Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Remove list elements until condition is met
+            </a>
+        
+            <a href="/2023/04/21/takeRightWhile/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.225Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Remove list elements from the end while condition is met
+            </a>
+        
+            <a href="/2023/04/21/symmetricDifferenceBy/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.224Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Mapped array symmetric difference
+            </a>
+        
+            <a href="/2023/04/21/symmetricDifferenceWith/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.224Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Array symmetric difference
+            </a>
+        
+            <a href="/2023/04/21/tail/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.224Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Array tail
+            </a>
+        
+            <a href="/2023/04/21/take/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.224Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Remove list elements
+            </a>
+        
+            <a href="/2023/04/21/superSet/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.223Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Superset of iterable
+            </a>
+        
+            <a href="/2023/04/21/subSet/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.221Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Subset of iterable
+            </a>
+        
+            <a href="/2023/04/21/stableSort/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.220Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Stable sort
+            </a>
+        
+            <a href="/2023/04/21/sortedLastIndex/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.219Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Last insertion index in sorted array
+            </a>
+        
+            <a href="/2023/04/21/sortedLastIndexBy/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.219Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Last insertion index in sorted array based on function
+            </a>
+        
+            <a href="/2023/04/21/shank/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.217Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Remove elements from array
+            </a>
+        
+            <a href="/2023/04/21/replaceOrAppend/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.213Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Replace or append array value
+            </a>
+        
+            <a href="/2023/04/21/reject/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.211Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Reject non-matching values
+            </a>
+        
+            <a href="/2023/04/21/remove/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.211Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Remove matching elements from array
+            </a>
+        
+            <a href="/2023/04/21/reduceSuccessive/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.210Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Array of successive values
+            </a>
+        
+            <a href="/2023/04/21/reduceWhich/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.210Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Min and max of array based on provided function
+            </a>
+        
+            <a href="/2023/04/21/reducedFilter/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.210Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Filter matching and unspecified values
+            </a>
+        
+            <a href="/2023/04/21/pullAtIndex/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.206Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Pull values from array at index
+            </a>
+        
+            <a href="/2023/04/21/pullAtValue/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.206Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Pull matching values from array
+            </a>
+        
+            <a href="/2023/04/21/pullBy/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.206Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Pull values from array based on function
+            </a>
+        
+            <a href="/2023/04/21/pull/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.205Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Pull values from array
+            </a>
+        
+            <a href="/2023/04/21/offset/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.195Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Offset array elements
+            </a>
+        
+            <a href="/2023/04/21/nthElement/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.192Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Nth element
+            </a>
+        
+            <a href="/2023/04/21/none/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.190Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Test if all array elements are falsy
+            </a>
+        
+            <a href="/2023/04/21/mostFrequent/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.183Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Most frequent element in array
+            </a>
+        
+            <a href="/2023/04/21/mergeSortedArrays/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.176Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Merge sorted arrays
+            </a>
+        
+            <a href="/2023/04/21/longestItem/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.172Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Longest item in array
+            </a>
+        
+            <a href="/2023/04/21/mapConsecutive/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.172Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Map consecutive elements
+            </a>
+        
+            <a href="/2023/04/21/lastN/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.170Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Last n elements
+            </a>
+        
+            <a href="/2023/04/21/last/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.170Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Last array element
+            </a>
+        
+            <a href="/2023/04/21/join/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.169Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Join array into string
+            </a>
+        
+            <a href="/2023/04/21/isSorted/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.167Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Array is sorted
+            </a>
+        
+            <a href="/2023/04/21/isDisjoint/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.161Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Disjointed iterables
+            </a>
+        
+            <a href="/2023/04/21/isContainedIn/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.160Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Array is contained in other array
+            </a>
+        
+            <a href="/2023/04/21/intersectionBy/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.156Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Mapped array intersection
+            </a>
+        
+            <a href="/2023/04/21/intersectionWith/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.156Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Array intersection based on function
+            </a>
+        
+            <a href="/2023/04/21/intersects/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.156Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Check if two arrays intersect
+            </a>
+        
+            <a href="/2023/04/21/insertAt/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.155Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Insert value at array index
+            </a>
+        
+            <a href="/2023/04/21/intersection/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.155Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Array intersection
+            </a>
+        
+            <a href="/2023/04/21/initializeArrayWithRangeRight/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.154Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Initialize array with reversed range
+            </a>
+        
+            <a href="/2023/04/21/initializeArrayWithValues/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.154Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Initialize array with values
+            </a>
+        
+            <a href="/2023/04/21/initializeArrayWithRange/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.151Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Initialize array with range
+            </a>
+        
+            <a href="/2023/04/21/initial/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.149Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Array without last element
+            </a>
+        
+            <a href="/2023/04/21/initialize2DArray/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.149Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Initialize 2D array
+            </a>
+        
+            <a href="/2023/04/21/indexOfAll/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.146Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Index of all matches
+            </a>
+        
+            <a href="/2023/04/21/includesAll/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.145Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Check if array includes all values
+            </a>
+        
+            <a href="/2023/04/21/includesAny/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.145Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Check if array includes any values
+            </a>
+        
+            <a href="/2023/04/21/head/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.142Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Head of array
+            </a>
+        
+            <a href="/2023/04/21/hasOne/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.141Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Check if array has only one match
+            </a>
+        
+            <a href="/2023/04/21/haveSameContents/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.141Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Check if arrays have same contents
+            </a>
+        
+            <a href="/2023/04/21/hasDuplicates/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.140Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Check if array has duplicates
+            </a>
+        
+            <a href="/2023/04/21/hasMany/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.140Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Check if array has many matches
+            </a>
+        
+            <a href="/2023/04/21/frozenSet/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.106Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Freeze Set object
+            </a>
+        
+            <a href="/2023/04/21/forEachRight/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.098Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Execute function for each array element in reverse
+            </a>
+        
+            <a href="/2023/04/21/firstN/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.095Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                First n elements
+            </a>
+        
+            <a href="/2023/04/21/findLastN/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.094Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Find last n matches
+            </a>
+        
+            <a href="/2023/04/21/findLast/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.093Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Find last matching value
+            </a>
+        
+            <a href="/2023/04/21/findLastIndex/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.093Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Find last matching index
+            </a>
+        
+            <a href="/2023/04/21/findFirstN/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.092Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Find first n matches
+            </a>
+        
+            <a href="/2023/04/21/findConsecutive/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.091Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Arrays of consecutive elements
+            </a>
+        
+            <a href="/2023/04/21/filterUniqueBy/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.090Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Filter unique array values based on function
+            </a>
+        
+            <a href="/2023/04/21/filterUnique/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.090Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Filter unique array values
+            </a>
+        
+            <a href="/2023/04/21/filterNonUnique/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.089Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Filter non-unique array values
+            </a>
+        
+            <a href="/2023/04/21/filterNonUniqueBy/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.089Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Filter non-unique array values based on function
+            </a>
+        
+            <a href="/2023/04/21/everyNth/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.087Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Every nth element
+            </a>
+        
+            <a href="/2023/04/21/dropRightWhile/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.085Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Drop list elements from the right based on function
+            </a>
+        
+            <a href="/2023/04/21/dropWhile/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.085Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Drop list elements from the left based on function
+            </a>
+        
+            <a href="/2023/04/21/drop/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.084Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Drop list elements from the left
+            </a>
+        
+            <a href="/2023/04/21/dropRight/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.084Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Drop list elements from the right
+            </a>
+        
+            <a href="/2023/04/21/differenceBy/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.082Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Mapped array difference
+            </a>
+        
+            <a href="/2023/04/21/difference/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.082Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Array difference
+            </a>
+        
+            <a href="/2023/04/21/differenceWith/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.082Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Array difference based on function
+            </a>
+        
+            <a href="/2023/04/21/countOccurrences/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.072Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Count occurrences
+            </a>
+        
+            <a href="/2023/04/21/compactJoin/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.070Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Compact and join array
+            </a>
+        
+            <a href="/2023/04/21/compact/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.069Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Compact array
+            </a>
+        
+            <a href="/2023/04/21/chunk/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.067Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Split into chunks
+            </a>
+        
+            <a href="/2023/04/21/chunkIntoN/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.067Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Split array into n chunks
+            </a>
+        
+            <a href="/2023/04/21/bifurcateBy/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.061Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Bifurcate array based on function
+            </a>
+        
+            <a href="/2023/04/21/bifurcate/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.061Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Bifurcate array based on values
+            </a>
+        
+            <a href="/2023/04/21/alphabetical/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.056Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Sort array alphabetically
+            </a>
+        
+            <a href="/2023/04/21/any/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.056Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Test if any array element is truthy
+            </a>
+        
+            <a href="/2023/04/21/aperture/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.056Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Consecutive element subarrays
+            </a>
+        
+            <a href="/2023/04/21/allEqualBy/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.055Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Check if array elements are equal based on function
+            </a>
+        
+            <a href="/2023/04/21/allEqual/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.055Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Check if array elements are equal
+            </a>
+        
+            <a href="/2023/04/21/allUnique/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.055Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Check if all array elements are unique
+            </a>
+        
+            <a href="/2023/04/21/allUniqueBy/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.055Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Check if all array elements are unique based on function
+            </a>
+        
+            <a href="/2023/04/21/all/" class="collection-item grey-text text-darken-1">
+                <time datetime="2023-04-21T09:05:49.054Z">2023-04-21</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                Test if all array elements are truthy
+            </a>
+        
+    </div>
+
+
+</div>
+
+        <div class="fixed-action-btn float-sitemap">
+    <a class="btn-floating btn-large pink">
+      <i class="fa fa-caret-square-o-up"></i>
+    </a>
+    <ul>
+      <li><a class="btn-return-top btn-floating waves-effect green" title="Return to top"><i class="fa fa-arrow-circle-o-up"></i></a></li>
+      <li><a class="btn-floating waves-effect button-collapse yellow darken-1"  data-activates="main-menu" title="Menu"><i class="fa fa-navicon"></i></a></li>
+    </ul>
+  </div>
+
+    </main>
+    <footer class="page-footer indigo darken-1">
+    
+    <div class="footer-container container">
+        <div class="row">
+            
+            <div class="social-group col m4 s12">
+                <h5 class="white-text">Social</h5>
+                
+                    <a class="social-link" href="http://weibo.com/1956184117" target="_blank">
+                        <i class="fa fa-2x fa-weibo"></i>
+                    </a>
+                
+                    <a class="social-link" href="https://github.com/raytaylorlin" target="_blank">
+                        <i class="fa fa-2x fa-github"></i>
+                    </a>
+                
+                    <a class="social-link" href="/atom.xml" target="_blank">
+                        <i class="fa fa-2x fa-rss"></i>
+                    </a>
+                
+                
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+    </script>
+    <div class="site-visitors-container white-text">
+        <span>
+            <i class="fa fa-user"></i>
+            <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+        </span>
+        <span>&nbsp;|&nbsp;</span>
+        <span>
+            <i class="fa fa-eye"></i>
+            <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+        </span>
+    </div>
+
+
+            </div>
+            
+
+            
+            <div class="col m8 s12">
+                <h5 class="white-text">Links</h5>
+                
+                    <a class="social-link" href="http://raytaylorlin.com/" target="_blank">raytaylorism主题作者的技术博客</a>
+                
+                    <a class="social-link" href="https://github.com/raytaylorlin" target="_blank">Github地址（测试友情链接）</a>
+                
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <div class="footer-copyright pink-link-context">
+        <div class="container">
+            © 2016 example.com, All rights reserved.
+            <p class="right" style="margin-top: 0;">Blog powered by <a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a> | Theme <a target="_blank" rel="noopener" href="https://github.com/raytaylorlin/hexo-theme-raytaylorism">raytaylorism</a></p>
+        </div>
+    </div>
+</footer>
+
+
+    <noscript>
+    <div class="noscript">
+        <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+    </div>
+</noscript>
+<div class="noscript">
+    <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+</div>
+
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/materialize.min.js"></script>
+
+<script>
+    (function($) {
+        $(document).ready(function() {
+            // 隐藏禁用javascript（针对微信内置浏览器）的提示
+            $('.noscript').hide();
+
+            // 图片缩放效果
+            var $imgs = $('img').not('.slider-image').not('.avatar-image').not('.carousel-image').not('.card-cover-image').not('.qrcode');
+
+            // 给图片加上点击放大效果（materialbox插件）
+            $imgs.addClass('materialboxed').each(function(i, el) {
+                $(this).attr('data-caption', $(this).attr('alt') || ' ');
+            }).materialbox();
+
+            // 优化表格的显示
+            $('table').each(function() {
+                var $table = $(this);
+                // 除去多行代码的情况
+                if ($table.find('pre').length == 0) {
+                    $table.addClass('responsive-table striped bordered');
+                }
+            });
+
+            // 首页幻灯片
+            $('.slider').slider({indicators: true, full_width: true, interval: 8000});
+
+            $(".button-collapse").sideNav();
+            $(".category-menu").sideNav();
+
+            // 针对gallery post
+            $('.carousel').carousel({full_width: true});
+            $('.carousel-control.prev').click(function() {
+                $('.carousel').carousel('prev');
+            });
+            $('.carousel-control.next').click(function() {
+                $('.carousel').carousel('next');
+            });
+
+            // 文章目录
+            $('article').not('.simple-article').find('h1').add('h2').add('h3').add('h4').add('h5').add('h6').scrollSpy();
+
+            // 目录随屏幕滚动（防止目录过长越过footer）
+            var $toc = $('.toc');
+            var scrollTargetTop = 0;
+            $(window).scroll(function() {
+                var $activeLink = $toc.find('a.active.section');
+                if ($(window).scrollTop() < 100) {
+                    scrollTargetTop = 0;
+                } else {
+                    if ($activeLink[0]) {
+                        scrollTargetTop = $activeLink.offset().top - $toc.offset().top;
+                    }
+                }
+                $toc.css('top', '-' + scrollTargetTop + 'px');
+            });
+
+            // 修正文章目录的left-border颜色
+            var color = $('.table-of-contents-text').css('color');
+            $('.table-of-contents-link').css('border-left-color', color);
+
+            // 针对移动端做的优化：FAB按钮点击一下收回
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                $('.fixed-action-btn').addClass('click-to-toggle');
+            }
+            // 回到顶部
+            $('.btn-return-top').click(function() {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 500);
+            });
+
+            // 重置读书页面的Tab标签页的颜色
+            $('li.tab a').hover(function() {
+                $(this).toggleClass('text-lighten-4');
+            });
+            $('.indicator').addClass('pink lighten-2');
+
+            
+            // 添加new标签
+            $('.menu-reading, .menu-about').append('<span class="new badge pink"></span>');
+            
+
+            // 搜索功能
+            $('.modal-trigger').leanModal({
+                // 打开搜索框时自动聚焦
+                ready: function() {
+                    if ($('#search').is(":visible")) {
+                        $('#search-input').focus();
+                    }
+                }
+            });
+            var searchXml = "";
+            if (searchXml.length == 0) {
+             	searchXml = "search.xml";
+            }
+            var searchPath = "/" + searchXml;
+            initSearch(searchPath, 'search-input', 'search-result');
+        });
+
+        // 初始化搜索与匹配函数
+        var initSearch = function(path, search_id, content_id) {
+            'use strict';
+            $.ajax({
+                url: path,
+                dataType: "xml",
+                success: function(xmlResponse) {
+                    // get the contents from search data
+                    var datas = $("entry", xmlResponse).map(function() {
+                        return {
+                            title: $("title", this).text(),
+                            content: $("content", this).text(),
+                            url: $("url", this).text()
+                        };
+                    }).get();
+                    var $input = document.getElementById(search_id);
+                    var $resultContent = document.getElementById(content_id);
+                    $input.addEventListener('input', function() {
+                        var str = '<ul class=\"search-result-list\">';
+                        var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                        $resultContent.innerHTML = "";
+                        if (this.value.trim().length <= 0) {
+                            return;
+                        }
+                        // perform local searching
+                        datas.forEach(function(data) {
+                            var isMatch = true;
+                            var content_index = [];
+                            var data_title = data.title.trim().toLowerCase();
+                            var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                            var data_url = data.url;
+                            var index_title = -1;
+                            var index_content = -1;
+                            var first_occur = -1;
+                            // only match artiles with not empty titles and contents
+                            if (data_title != '' && data_content != '') {
+                                keywords.forEach(function(keyword, i) {
+                                    index_title = data_title.indexOf(keyword);
+                                    index_content = data_content.indexOf(keyword);
+                                    if (index_title < 0 && index_content < 0) {
+                                        isMatch = false;
+                                    } else {
+                                        if (index_content < 0) {
+                                            index_content = 0;
+                                        }
+                                        if (i == 0) {
+                                            first_occur = index_content;
+                                        }
+                                    }
+                                });
+                            }
+                            // show search results
+                            if (isMatch) {
+                                keywords.forEach(function(keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    data_title = data_title.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                });
+
+                                str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                                var content = data.content.trim().replace(/<[^>]+>/g, "");
+                                if (first_occur >= 0) {
+                                    // cut out 100 characters
+                                    var start = first_occur - 20;
+                                    var end = first_occur + 80;
+                                    if (start < 0) {
+                                        start = 0;
+                                    }
+                                    if (start == 0) {
+                                        end = 100;
+                                    }
+                                    if (end > content.length) {
+                                        end = content.length;
+                                    }
+                                    var match_content = content.substring(start, end);
+                                    // highlight all keywords
+                                    keywords.forEach(function(keyword) {
+                                        var regS = new RegExp(keyword, "gi");
+                                        match_content = match_content.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                    });
+
+                                    str += "<p class=\"search-result\">..." + match_content + "...</p>"
+                                }
+                                str += "</li>";
+                            }
+                        });
+                        str += "</ul>";
+                        $resultContent.innerHTML = str;
+                    });
+                }
+            });
+        }
+    })(jQuery);
+</script>
+
+
+<script src="/js/prettify.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("pre").addClass("prettyprint");
+        prettyPrint();
+    });
+</script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+
+</body>
+</html>
